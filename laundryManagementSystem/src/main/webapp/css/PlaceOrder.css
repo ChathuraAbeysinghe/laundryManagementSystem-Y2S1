@@ -1,0 +1,72 @@
+body {
+    background-image: url("../images/laundry2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Styling for form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* translucent background */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ea580c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Form input fields */
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #f97316;
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ea580c;
+}
+.inline-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.inline-fields .field {
+    flex: 1;
+}
+
+.inline-fields .field label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}

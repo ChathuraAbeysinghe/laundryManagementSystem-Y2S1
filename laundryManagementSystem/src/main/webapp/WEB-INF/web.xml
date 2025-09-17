@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<servlet>
+     	<servlet-name>Loginservlet</servlet-name>
+     	<servlet-class>Delivery.Loginservlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>Loginservlet</servlet-name>
+     	<url-pattern>/Login</url-pattern>
+     </servlet-mapping>
+
+ <servlet>
+        <servlet-name>Registerservlet</servlet-name>
+        <servlet-class>Delivery.Registerservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registerservlet</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+
+
+
+     <servlet>
+     	<servlet-name>deliveryInsert</servlet-name>
+     	<servlet-class>Delivery.deliveryInsert</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>deliveryInsert</servlet-name>
+     	<url-pattern>/Insert</url-pattern>
+     </servlet-mapping>
+     
+     
+      <servlet>
+     	<servlet-name>showServlet</servlet-name>
+     	<servlet-class>Delivery.showServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>showServlet</servlet-name>
+     	<url-pattern>/show</url-pattern>
+     </servlet-mapping>
+     
+     
+      <servlet>
+     	<servlet-name>updateStatusServlet</servlet-name>
+     	<servlet-class>Delivery.updateStatusServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>updateStatusServlet</servlet-name>
+     	<url-pattern>/update</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>deliveryDeleteServlet</servlet-name>
+     	<servlet-class>Delivery.deliveryDeleteServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>deliveryDeleteServlet</servlet-name>
+     	<url-pattern>/delete</url-pattern>
+     </servlet-mapping>
+   
+ 
+ 
+      <servlet>
+     	<servlet-name>orderCountServlet</servlet-name>
+     	<servlet-class>Delivery.orderCountServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>orderCountServlet</servlet-name>
+     	<url-pattern>/orderCount</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+    <servlet-name>custometAddressServlet</servlet-name>
+    <servlet-class>Delivery.custometAddressServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    <servlet-name>custometAddressServlet</servlet-name>
+    <url-pattern>/custometAddress</url-pattern>
+	</servlet-mapping>
+	
+ 
+ 
+ 
+ 
+ 	<servlet>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <servlet-class>Delivery.PlaceOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceOrderServlet</servlet-name>
+    <url-pattern>/POrderServlet</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>ViewOrderServlet</servlet-name>
+    <servlet-class>Delivery.ViewOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewOrderServlet</servlet-name>
+    <url-pattern>/VOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <servlet-class>Delivery.UpdateOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <url-pattern>/UOrderServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <servlet-class>Delivery.DeleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <url-pattern>/DOrderServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListOrdersServlet</servlet-name>
+    <servlet-class>Delivery.ListOrdersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListOrdersServlet</servlet-name>
+    <url-pattern>/LOrdersServlet</url-pattern>
+  </servlet-mapping>
+ 	
+ 	
+ 	
+ 	
+
+
+<servlet>
+		<servlet-name>AddPaymentServlet</servlet-name>
+		<servlet-class>Delivery.AddPaymentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddPaymentServlet</servlet-name>
+		<url-pattern>/AddPaymentServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CashOnDeliveryServlet</servlet-name>
+		<servlet-class>Delivery.CashOnDeliveryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CashOnDeliveryServlet</servlet-name>
+		<url-pattern>/CashOnDeliveryServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AcceptPayment</servlet-name>
+		<servlet-class>Delivery.AcceptPayment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AcceptPayment</servlet-name>
+		<url-pattern>/AcceptPayment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RejectPayment</servlet-name>
+		<servlet-class>Delivery.RejectPayment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RejectPayment</servlet-name>
+		<url-pattern>/RejectPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    <servlet-name>UpdatePaymentName</servlet-name>
+    <servlet-class>Delivery.UpdatePaymentName</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdatePaymentName</servlet-name>
+    <url-pattern>/UpdatePaymentName</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeletePayment</servlet-name>
+    <servlet-class>Delivery.DeletePayment</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeletePayment</servlet-name>
+    <url-pattern>/DeletePayment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateUserPayment</servlet-name>
+    <servlet-class>Delivery.UpdateUserPayment</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateUserPayment</servlet-name>
+    <url-pattern>/UpdateUserPayment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteUserPayment</servlet-name>
+    <servlet-class>Delivery.DeleteUserPayment</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteUserPayment</servlet-name>
+    <url-pattern>/DeleteUserPayment</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+<servlet>
+    <servlet-name>UpdateStaffServlet</servlet-name>
+    <servlet-class>Delivery.UpdateStaffServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateStaffServlet</servlet-name>
+    <url-pattern>/UpdateStaffServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteStaffServlet</servlet-name>
+    <servlet-class>Delivery.DeleteStaffServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteStaffServlet</servlet-name>
+    <url-pattern>/DeleteStaff</url-pattern>
+</servlet-mapping>
+    <!--
+<servlet>
+    <servlet-name>PlaceOrderServletAz</servlet-name>
+    <servlet-class>Delivery.PlaceOrderServletAz</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PlaceOrderServletAz</servlet-name>
+    <url-pattern>/PlaceOrderServlet</url-pattern>
+</servlet-mapping>
+	-->
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Delivery.LogoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ViewOrdersServletAz</servlet-name>
+    <servlet-class>Delivery.ViewOrdersServletAz</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ViewOrdersServletAz</servlet-name>
+    <url-pattern>/viewOrders</url-pattern>
+</servlet-mapping>   
+
+     
+</web-app>
